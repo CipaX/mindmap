@@ -4,7 +4,7 @@
   "id": 1,
   "ideas": {
     "21": {
-      "title": "compute",
+      "title": "compute - rules implementation",
       "id": 4,
       "ideas": {
         "1": {
@@ -20,7 +20,7 @@
                   "id": 47
                 },
                 "2": {
-                  "title": "oLabelOffset = iFastTrack.labelPlacement",
+                  "title": "oTdbOffset = iFastTrack.labelPlacement",
                   "id": 54
                 }
               }
@@ -45,7 +45,7 @@
                           }
                         },
                         "2": {
-                          "title": "oLabelOffset =  r_pAlorItemMap[trackItemId].r_labelOffset",
+                          "title": "oTdbOffset =  r_pAlorItemMap[trackItemId].r_labelOffset",
                           "id": 55
                         }
                       }
@@ -115,6 +115,102 @@
                   }
                 }
               }
+            }
+          }
+        },
+        "2": {
+          "title": "fixed length case - for track oriented tracks",
+          "id": 71,
+          "ideas": {
+            "1": {
+              "title": "concept confusion",
+              "id": 73,
+              "ideas": {
+                "1": {
+                  "title": "the Master flag is actually checked instead",
+                  "id": 76
+                },
+                "2": {
+                  "title": "theoretically it is not guaranteed that the track orientation is enabled",
+                  "id": 77
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#ff6600"
+                }
+              }
+            },
+            "2": {
+              "title": "it seams that oTdbOffset is adjusted not to intersect the TDB",
+              "id": 85,
+              "ideas": {
+                "1": {
+                  "title": "isn't this ensured beforehand?",
+                  "id": 86,
+                  "attr": {
+                    "style": {
+                      "background": "#ff6600"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "magnified label treatment",
+          "id": 87,
+          "ideas": {
+            "1": {
+              "title": "should be removed",
+              "id": 88,
+              "attr": {
+                "style": {
+                  "background": "#00ffff"
+                }
+              }
+            }
+          }
+        },
+        "1.5": {
+          "title": "compute the other output argument depending on the known one",
+          "id": 80,
+          "ideas": {
+            "1": {
+              "title": "oTdbOffset if Master = Leader",
+              "id": 82
+            },
+            "2": {
+              "title": "oLeaderOffset if Master = TDB",
+              "id": 83
+            }
+          }
+        },
+        "3.5": {
+          "title": "observations",
+          "id": 93,
+          "ideas": {
+            "1": {
+              "title": "iFirstNonEmptyRow  is not used",
+              "id": 91,
+              "attr": {
+                "style": {
+                  "background": "transparent"
+                }
+              }
+            },
+            "2": {
+              "title": "the r_tdeComputer.computeLabelOffset calls do not seem to match the prototype",
+              "id": 92,
+              "attr": {
+                "style": {}
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#ff6600"
             }
           }
         }
@@ -302,7 +398,7 @@
           "ideas": {}
         },
         "2": {
-          "title": "oLabelOffset",
+          "title": "oTdbOffset",
           "id": 43
         }
       }
