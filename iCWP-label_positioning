@@ -1,5 +1,198 @@
 {
   "title": "iCWP-label_positioning",
   "formatVersion": 2,
-  "id": 1
+  "id": 1,
+  "ideas": {
+    "21": {
+      "title": "compute",
+      "id": 4
+    },
+    "-10": {
+      "title": "inputs",
+      "id": 2,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "r_pAlorItemMap",
+          "id": 5,
+          "ideas": {
+            "1": {
+              "title": "Tbl: AlorTrack",
+              "id": 29,
+              "ideas": {
+                "1": {
+                  "title": "labelOffset",
+                  "id": 30
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "iFastTrack",
+          "id": 7,
+          "ideas": {
+            "1": {
+              "title": "Tbl: FastTrack",
+              "id": 31,
+              "ideas": {
+                "1": {
+                  "title": "isManual",
+                  "id": 32
+                },
+                "2": {
+                  "title": "labelPlacement",
+                  "id": 33
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "r_fastOptions",
+          "id": 8,
+          "ideas": {
+            "1": {
+              "title": "PmFrameContext",
+              "id": 34,
+              "ideas": {
+                "1": {
+                  "title": "Tbl: DbtPmFastAswData",
+                  "id": 35,
+                  "ideas": {
+                    "1": {
+                      "title": "tdeFastOptions",
+                      "id": 36,
+                      "ideas": {
+                        "1": {
+                          "title": "isOrientationModeAutomatic",
+                          "id": 37
+                        },
+                        "2": {
+                          "title": "defaultLabelOffset",
+                          "id": 38
+                        },
+                        "3": {
+                          "title": "isTrackOrientationEnabled",
+                          "id": 39
+                        },
+                        "4": {
+                          "title": "leaderLineLength",
+                          "id": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "related to magnification",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "r_highlightedFieldId",
+              "id": 10,
+              "ideas": {
+                "1": {
+                  "title": "is used elswhere too",
+                  "id": 27
+                }
+              }
+            },
+            "2": {
+              "title": "r_highlightedFieldOffsetExists",
+              "id": 11
+            },
+            "3": {
+              "title": "r_highlightedFieldOffset",
+              "id": 12
+            },
+            "0.5": {
+              "title": "iIsMagnified",
+              "id": 26
+            },
+            "0.75": {
+              "title": "iFieldGeomMap",
+              "id": 28
+            }
+          }
+        },
+        "3.5": {
+          "title": "iSlowTrack",
+          "id": 13
+        },
+        "3.75": {
+          "title": "iSpeedVectorKnots",
+          "id": 14
+        },
+        "3.875": {
+          "title": "iLocalDataBlockOptions",
+          "id": 15,
+          "ideas": {
+            "1": {
+              "title": "used for char height (depnding on isMagnified)",
+              "id": 16
+            }
+          }
+        },
+        "3.9375": {
+          "title": "iRawDataBlockCfg",
+          "id": 17,
+          "ideas": {
+            "1": {
+              "title": "leader line",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": "connection mode",
+                  "id": 21,
+                  "ideas": {
+                    "1": {
+                      "title": "eight_points / top_left / top_right / center",
+                      "id": 19
+                    }
+                  }
+                },
+                "2": {
+                  "title": "connection row",
+                  "id": 22
+                }
+              }
+            }
+          }
+        },
+        "3.96875": {
+          "title": "iDataBlockSize",
+          "id": 23
+        },
+        "3.984375": {
+          "title": "iFirstNonEmptyRow",
+          "id": 24
+        }
+      }
+    },
+    "-20": {
+      "title": "outputs",
+      "id": 3,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "oLeaderOffset",
+          "id": 41,
+          "ideas": {}
+        },
+        "2": {
+          "title": "oLabelOffset",
+          "id": 43
+        }
+      }
+    }
+  }
 }
