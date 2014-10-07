@@ -1,0 +1,1489 @@
+{
+  "title": "2014.09.18 - RC iCWP - config files",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "rule configuration related files",
+      "id": 13,
+      "ideas": {
+        "1": {
+          "title": "fixed with the build",
+          "id": 16,
+          "ideas": {
+            "1": {
+              "title": "C++ compilation",
+              "attr": {
+                "style": {}
+              },
+              "id": 52,
+              "ideas": {
+                "1": {
+                  "title": "iCWP .h files",
+                  "id": 17,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "rule compiler (Data Dictionary)",
+              "id": 19,
+              "ideas": {
+                "1": {
+                  "title": "ICWP_RULE_MEMORY_ATTRIBUTES.CFG",
+                  "id": 56
+                },
+                "2": {
+                  "title": "ICWP_RULE_OBJECTS.CFG",
+                  "id": 57
+                },
+                "3": {
+                  "title": "ICWP_RULE_OPERATORS.CFG",
+                  "id": 58
+                },
+                "4": {
+                  "title": "ICWP_RULE_GLOBAL_FUNCTIONS.CFG",
+                  "id": 59
+                },
+                "5.25": {
+                  "title": "ICWP_RULE_DP_INPUT_MAPPING.CFG",
+                  "id": 66,
+                  "attr": {
+                    "style": {}
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "ICWP_RULE_FLIGHT_VARIABLES.CFG",
+                      "id": 69,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "ICWP_RULE_FLIGHT_GF_VARIABLES.CFG",
+                      "id": 68,
+                      "attr": {
+                        "style": {}
+                      }
+                    }
+                  }
+                },
+                "5.125": {
+                  "title": "ICWP_RULE_RESULT_MAPPING.CFG",
+                  "id": 65,
+                  "attr": {
+                    "style": {
+                      "background": "#ccffff"
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "ICWP_RULE_RESULT_VALUES_TRILEAN.CFG",
+                      "id": 64,
+                      "attr": {
+                        "style": {
+                          "background": "#ccffff"
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "ICWP_RULE_RESULT_VALUES_FUNCTION_ID.CFG",
+                      "id": 116,
+                      "attr": {
+                        "style": {
+                          "background": "#ccffff"
+                        }
+                      }
+                    }
+                  }
+                },
+                "6.25": {
+                  "title": "ICWP_RULE_ID_MAP_INDEX.CFG",
+                  "id": 80,
+                  "attr": {
+                    "style": {
+                      "background": "#ffcc99"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "100% CCT written files",
+          "ideas": {
+            "2": {
+              "title": "for all CWRs",
+              "id": 23,
+              "ideas": {
+                "11": {
+                  "title": "CFG",
+                  "id": 126,
+                  "ideas": {
+                    "2": {
+                      "title": "stack",
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_STACK.CFG",
+                          "id": 150,
+                          "ideas": {
+                            "1": {
+                              "title": "processed into ICWP_TDE_FIELD_SETUP.CFG at launch",
+                              "id": 151
+                            },
+                            "2": {
+                              "title": "to do",
+                              "id": 154,
+                              "attr": {
+                                "style": {
+                                  "background": "#00ccff"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "id": 32,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "3": {
+                      "title": "data block",
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_LABEL.CFG",
+                          "ideas": {
+                            "1": {
+                              "title": "processed into ICWP_TDE.CFG at launch",
+                              "id": 153
+                            },
+                            "2": {
+                              "title": "to do",
+                              "id": 155,
+                              "attr": {
+                                "style": {
+                                  "background": "#00ccff"
+                                }
+                              }
+                            }
+                          },
+                          "id": 152,
+                          "attr": {
+                            "style": {}
+                          }
+                        }
+                      },
+                      "id": 35,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "4": {
+                      "title": "tabular item format",
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_TAB_ITEM_FORMAT.CFG",
+                          "id": 147,
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {}
+                        }
+                      },
+                      "id": 38,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "5": {
+                      "title": "tabular list",
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_TAB.CFG",
+                          "id": 145
+                        }
+                      },
+                      "id": 41,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "6": {
+                      "title": "tabular container",
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_TAB_CONTAINER.CFG",
+                          "id": 146
+                        }
+                      },
+                      "id": 45,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "7": {
+                      "title": "color",
+                      "id": 53,
+                      "ideas": {
+                        "3": {
+                          "title": "ICWP_IGL_PURE_COLORS_RULES.CFG",
+                          "id": 61,
+                          "attr": {
+                            "style": {}
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "8": {
+                      "title": "font",
+                      "id": 164,
+                      "ideas": {
+                        "1": {
+                          "title": "ICWP_RCC_FONT_SETS.CFG",
+                          "id": 119,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "2": {
+                          "title": "ICWP_RCC_FONT_MATRIX.CFG",
+                          "id": 120,
+                          "attr": {
+                            "style": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "1.5": {
+                  "title": "used by the rule compiler",
+                  "id": 51,
+                  "attr": {
+                    "style": {}
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "irule files and index",
+                      "id": 26,
+                      "ideas": {
+                        "1": {
+                          "title": "macros",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_MACRO.CFG",
+                              "id": 125,
+                              "attr": {
+                                "style": {}
+                              }
+                            }
+                          },
+                          "id": 107
+                        },
+                        "2": {
+                          "title": "generic fields",
+                          "id": 110,
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "flight.generic_field[*].irule",
+                              "id": 156
+                            },
+                            "2": {
+                              "title": "flight.leg.generic_field[*].irule",
+                              "id": 157,
+                              "attr": {
+                                "style": {}
+                              }
+                            }
+                          }
+                        },
+                        "3": {
+                          "title": "enhanced field",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "flight.ef[*].*.irule",
+                              "id": 158
+                            }
+                          },
+                          "id": 134
+                        },
+                        "0.5": {
+                          "title": "rule_index.xml",
+                          "id": 135,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "3.5": {
+                          "title": "stack",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "flight.stack[*].*.irule",
+                              "id": 159,
+                              "attr": {
+                                "style": {}
+                              }
+                            }
+                          },
+                          "id": 133
+                        },
+                        "3.75": {
+                          "title": "data block",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "track.label[*].*.irule",
+                              "id": 160
+                            }
+                          },
+                          "id": 132
+                        },
+                        "3.875": {
+                          "title": "tabular item format",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "tab.format[*].*.irule",
+                              "id": 161
+                            }
+                          },
+                          "id": 131
+                        },
+                        "3.9375": {
+                          "title": "tabular list",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "tab[*].*.irule",
+                              "id": 162
+                            }
+                          },
+                          "id": 130
+                        }
+                      },
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "12": {
+                      "title": "CFGs - used mostly by the rule compiler, but also by the iCWP",
+                      "id": 112,
+                      "ideas": {
+                        "1": {
+                          "title": "enhanced field",
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_EF.CFG",
+                              "id": 111,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "id": 85,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "2": {
+                          "title": "stack",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_TDE_FIELD_ID.CFG",
+                              "id": 113,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "id": 88
+                        },
+                        "3": {
+                          "title": "data block",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_TRACK_LABEL_ID.CFG",
+                              "id": 114,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "id": 91
+                        },
+                        "4": {
+                          "title": "tabular item format",
+                          "attr": {
+                            "style": {}
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_TAB_ITEM_FORMAT_ID.CFG",
+                              "id": 124,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              },
+                              "ideas": {
+                                "1": {
+                                  "title": "to do",
+                                  "id": 136,
+                                  "attr": {
+                                    "style": {
+                                      "background": "#00ccff"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "id": 94
+                        },
+                        "5": {
+                          "title": "tabular list",
+                          "id": 141,
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_ID_MAP_TAB.CFG",
+                              "id": 142,
+                              "attr": {
+                                "style": {
+                                  "background": "#ffcc99"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "6": {
+                          "title": "tabular list container",
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_ID_MAP_TAB_CONTAINER.CFG",
+                              "id": 144,
+                              "attr": {
+                                "style": {
+                                  "background": "#ffcc99"
+                                }
+                              }
+                            }
+                          },
+                          "id": 143,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "0.5": {
+                          "title": "color",
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_STATIC_PURE_COLOR_ID.CFG",
+                              "id": 115,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "id": 103,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "0.75": {
+                          "title": "font",
+                          "id": 117,
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_FONT_MODIFIER_ID.CFG",
+                              "id": 118,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "0.875": {
+                          "title": "symbol",
+                          "id": 121,
+                          "ideas": {
+                            "1": {
+                              "title": "ICWP_RULE_RESULT_VALUES_CHAR_ID.CFG",
+                              "id": 123,
+                              "attr": {
+                                "style": {
+                                  "background": "#ccffff"
+                                }
+                              }
+                            }
+                          },
+                          "attr": {
+                            "style": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "id": 21,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "partially derived from some CCT files",
+          "ideas": {
+            "1": {
+              "title": "TDE.CFG - data block CFG",
+              "id": 48
+            },
+            "2": {
+              "title": "TDE_FIELD_SETUP.CFG - iCWP logical field = stack",
+              "id": 49
+            },
+            "0.5": {
+              "title": "changed at iCWP launch",
+              "attr": {
+                "style": {}
+              },
+              "ideas": {},
+              "id": 50
+            }
+          },
+          "id": 24,
+          "attr": {
+            "style": {}
+          }
+        }
+      }
+    },
+    "-10": {
+      "title": "files existing before adding rule capability",
+      "id": 3,
+      "attr": {
+        "style": {},
+        "position": [
+          177,
+          -914,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "fixed with the build",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "never changed",
+              "id": 6
+            }
+          }
+        },
+        "2": {
+          "title": "100% CCT written files",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "per CWR",
+              "id": 10
+            },
+            "2": {
+              "title": "for all CWRs",
+              "id": 11
+            }
+          }
+        },
+        "3": {
+          "title": "partially derived from some CCT files",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "changed at iCWP launch",
+              "id": 7,
+              "ideas": {},
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "-20": {
+      "title": "xls mapping",
+      "id": 166,
+      "attr": {
+        "style": {},
+        "position": [
+          245,
+          8,
+          2
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "color",
+          "id": 188,
+          "ideas": {
+            "1": {
+              "title": "rule_colors.csv",
+              "id": 167,
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "color key",
+                  "id": 179
+                },
+                "2": {
+                  "title": "RGBA/blink",
+                  "id": 180
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "font",
+          "id": 168,
+          "ideas": {
+            "1": {
+              "title": "rule_font_matrix.csv",
+              "id": 189,
+              "ideas": {
+                "1": {
+                  "title": "matrix",
+                  "id": 181,
+                  "ideas": {
+                    "1": {
+                      "title": "column headers",
+                      "id": 182,
+                      "ideas": {
+                        "1": {
+                          "title": "font modifiers",
+                          "id": 183
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "row headers",
+                      "id": 184,
+                      "ideas": {
+                        "1": {
+                          "title": "font sets",
+                          "id": 185
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "cells",
+                      "id": 186,
+                      "ideas": {
+                        "1": {
+                          "title": "font alias key",
+                          "id": 196
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            },
+            "0.5": {
+              "title": "rule_font_alias.csv",
+              "id": 190,
+              "ideas": {
+                "1": {
+                  "title": "font alias key",
+                  "id": 191
+                },
+                "2": {
+                  "title": "family name",
+                  "id": 192
+                },
+                "3": {
+                  "title": "size",
+                  "id": 193
+                },
+                "4": {
+                  "title": "isBold",
+                  "id": 194
+                },
+                "5": {
+                  "title": "isItalic",
+                  "id": 195
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "symbol",
+          "id": 169,
+          "ideas": {
+            "1": {
+              "title": "rule_symbols.csv",
+              "id": 197,
+              "ideas": {
+                "1": {
+                  "title": "symbol key",
+                  "id": 198
+                },
+                "2": {
+                  "title": "ascii code",
+                  "id": 199
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "enhanced field",
+          "id": 170,
+          "ideas": {
+            "1": {
+              "title": "rule_efs.csv",
+              "id": 244,
+              "ideas": {
+                "1": {
+                  "title": "DP info corresponding to the specific attribute key",
+                  "id": 214,
+                  "ideas": {
+                    "2": {
+                      "title": "text DP",
+                      "id": 220,
+                      "ideas": {
+                        "1": {
+                          "title": "simple DP",
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          },
+                          "ideas": {
+                            "2": {
+                              "title": "e.g. \"A\"+fp.ades",
+                              "id": 238
+                            }
+                          },
+                          "id": 236
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "3": {
+                      "title": "fgColor DP",
+                      "id": 221,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "id": 239,
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "written in several rows",
+                              "id": 241,
+                              "ideas": {
+                                "1": {
+                                  "title": "the values of the colums  that are not involved are dupplicated",
+                                  "id": 242,
+                                  "ideas": {
+                                    "1": {
+                                      "title": "EF key and attribute key",
+                                      "id": 249
+                                    }
+                                  }
+                                },
+                                "2": {
+                                  "title": "columns",
+                                  "id": 250,
+                                  "ideas": {
+                                    "1": {
+                                      "title": "expression",
+                                      "id": 251,
+                                      "ideas": {}
+                                    },
+                                    "2": {
+                                      "title": "result",
+                                      "id": 252,
+                                      "ideas": {
+                                        "1": {
+                                          "title": "e.g. color.warning",
+                                          "id": 265
+                                        }
+                                      }
+                                    },
+                                    "1.5": {
+                                      "title": "ack",
+                                      "id": 323
+                                    },
+                                    "1.75": {
+                                      "title": "rev",
+                                      "id": 324
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "bgColor DP",
+                      "id": 222,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "id": 254,
+                          "ideas": {},
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "5": {
+                      "title": "font DP",
+                      "id": 223,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "ideas": {},
+                          "id": 256,
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "6": {
+                      "title": "frameColor DP",
+                      "id": 224,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "ideas": {},
+                          "id": 258,
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "7": {
+                      "title": "function DPs",
+                      "id": 227,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "ideas": {},
+                          "id": 259,
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          }
+                        },
+                        "0.5": {
+                          "title": "mouse action",
+                          "id": 269,
+                          "ideas": {
+                            "1": {
+                              "title": "e.g. left-click, hover-in, right-hold",
+                              "id": 270
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    },
+                    "5.5": {
+                      "title": "isUnderlined DP",
+                      "id": 226,
+                      "ideas": {
+                        "1": {
+                          "title": "ladder-if DP",
+                          "ideas": {},
+                          "id": 257,
+                          "attr": {
+                            "style": {
+                              "background": "transparent"
+                            }
+                          }
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "transparent"
+                    }
+                  }
+                },
+                "0.5": {
+                  "title": "EF key",
+                  "id": 215,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "0.75": {
+                  "title": "attribute key",
+                  "id": 247
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "stack",
+          "id": 171,
+          "ideas": {
+            "1": {
+              "title": "rule_stacks.csv",
+              "id": 261,
+              "ideas": {
+                "1": {
+                  "title": "stack key",
+                  "id": 262
+                },
+                "2": {
+                  "title": "attribute key",
+                  "id": 263
+                },
+                "3": {
+                  "title": "DP info corresponding to the specific attribute key",
+                  "id": 264
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "6": {
+          "title": "data block",
+          "id": 172,
+          "ideas": {
+            "1": {
+              "title": "rule_data_blocks.csv",
+              "id": 267,
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "data block key",
+                  "id": 268
+                },
+                "2": {
+                  "title": "data block line",
+                  "id": 272,
+                  "ideas": {
+                    "1": {
+                      "title": "the order within a line is determined by the order of the rows in the excel",
+                      "id": 315
+                    }
+                  }
+                },
+                "4": {
+                  "title": "separator char count",
+                  "id": 274
+                },
+                "5": {
+                  "title": "size policy",
+                  "id": 275
+                },
+                "3.5": {
+                  "title": "stack key",
+                  "id": 276,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "7": {
+          "title": "tabular item format",
+          "id": 173,
+          "ideas": {
+            "1": {
+              "title": "rule_tab_item_format.csv",
+              "id": 278,
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "tabular format key",
+                  "id": 280
+                },
+                "2": {
+                  "title": "column index",
+                  "id": 281
+                },
+                "3": {
+                  "title": "stack key",
+                  "id": 282
+                },
+                "4": {
+                  "title": "[optional] maxFont",
+                  "id": 283
+                }
+              }
+            }
+          }
+        },
+        "8": {
+          "title": "tabular list",
+          "id": 174,
+          "ideas": {
+            "1": {
+              "title": "rule_tab_list.csv",
+              "id": 284,
+              "ideas": {
+                "1": {
+                  "title": "tabular list key",
+                  "id": 285
+                },
+                "2": {
+                  "title": "title",
+                  "id": 286
+                },
+                "3": {
+                  "title": "driver",
+                  "id": 287,
+                  "ideas": {
+                    "1": {
+                      "title": "track / fp / leg",
+                      "id": 288
+                    }
+                  }
+                },
+                "4": {
+                  "title": "hasHeader",
+                  "id": 289
+                },
+                "5": {
+                  "title": "hasOptionsButton",
+                  "id": 290
+                },
+                "6": {
+                  "title": "hasAutoRemoveButton",
+                  "id": 291
+                },
+                "7": {
+                  "title": "autoResizeMinRows",
+                  "id": 292
+                },
+                "8": {
+                  "title": "autoResizeMaxRows",
+                  "id": 293
+                },
+                "9": {
+                  "title": "defaultHeaderFont",
+                  "id": 294
+                },
+                "10": {
+                  "title": "defaultItemFont",
+                  "id": 295
+                },
+                "11": {
+                  "title": "column[n]",
+                  "id": 296,
+                  "ideas": {
+                    "1": {
+                      "title": "name",
+                      "id": 298
+                    },
+                    "2": {
+                      "title": "isOptional",
+                      "id": 299
+                    },
+                    "3": {
+                      "title": "isHidden",
+                      "id": 300
+                    },
+                    "4": {
+                      "title": "maxTitleSizeInChars",
+                      "id": 301
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "9": {
+          "title": "tabular list container",
+          "id": 175,
+          "ideas": {
+            "1": {
+              "title": "rule_tab_container.csv",
+              "id": 302,
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "tabular container key",
+                  "id": 303
+                },
+                "2": {
+                  "title": "bundle key",
+                  "id": 304
+                },
+                "3": {
+                  "title": "mainWinCell",
+                  "id": 305
+                },
+                "4": {
+                  "title": "itkDisplayIndex",
+                  "id": 306
+                },
+                "5": {
+                  "title": "title",
+                  "id": 307
+                },
+                "6": {
+                  "title": "isAutoShown",
+                  "id": 308,
+                  "ideas": {}
+                },
+                "7": {
+                  "title": "isAutoHidden",
+                  "id": 309
+                },
+                "8": {
+                  "title": "isAutoResized",
+                  "id": 310
+                },
+                "9": {
+                  "title": "tabList[n]",
+                  "id": 313,
+                  "ideas": {
+                    "1": {
+                      "title": "tabular list key",
+                      "id": 314
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3.5": {
+          "title": "macros",
+          "id": 176,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "rule_macros.csv",
+              "id": 200,
+              "ideas": {
+                "1": {
+                  "title": "arguments (comma separated)",
+                  "id": 201,
+                  "ideas": {
+                    "1": {
+                      "title": "e.g fp, track, level",
+                      "id": 203
+                    }
+                  }
+                },
+                "2": {
+                  "title": "macro code",
+                  "id": 202,
+                  "ideas": {
+                    "1": {
+                      "title": "e.g. (fp.isValid && (fp.cfl > level)) || (!fp.isValid &&(track.afl > level))",
+                      "id": 231
+                    }
+                  }
+                },
+                "0.5": {
+                  "title": "macro name",
+                  "id": 229,
+                  "ideas": {
+                    "1": {
+                      "title": "e.g. IS_LEVEL_GREATER",
+                      "id": 230
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "3.75": {
+          "title": "per flight (FP/track/both) generic fields",
+          "id": 177,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "rule_flight_gfs.csv",
+              "id": 204,
+              "ideas": {
+                "1": {
+                  "title": "alias",
+                  "id": 207
+                },
+                "2": {
+                  "title": "flight generic field boolean DP",
+                  "id": 208,
+                  "ideas": {
+                    "1": {
+                      "title": "simple DP",
+                      "id": 233,
+                      "ideas": {
+                        "1": {
+                          "title": "uses one row and three columns",
+                          "id": 316,
+                          "ideas": {
+                            "2": {
+                              "title": "expression",
+                              "id": 317,
+                              "ideas": {
+                                "1": {
+                                  "title": "the name expression is used instead of condition, because this column will be shared with the text expression of text DPs",
+                                  "id": 322,
+                                  "attr": {
+                                    "style": {}
+                                  }
+                                }
+                              }
+                            },
+                            "3": {
+                              "title": "ack",
+                              "id": 318,
+                              "ideas": {
+                                "1": {
+                                  "title": "3 options: <empty>/ack/!ack",
+                                  "id": 320
+                                }
+                              }
+                            },
+                            "4": {
+                              "title": "rev",
+                              "id": 319,
+                              "ideas": {
+                                "1": {
+                                  "title": "3 options: <empty>/rev/!rev",
+                                  "id": 321,
+                                  "attr": {
+                                    "style": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "e.g. fp.isAssumed && (fp.ades == \"EHAM\")",
+                          "id": 235
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "transparent"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "background": "transparent"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        },
+        "3.875": {
+          "title": "per leg generic fields",
+          "id": 178,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "rule_flight_leg_gfs.csv",
+              "id": 206,
+              "ideas": {
+                "1": {
+                  "title": "alias",
+                  "id": 210,
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "3": {
+                  "title": "flight generic field boolean DP",
+                  "ideas": {},
+                  "id": 212,
+                  "attr": {
+                    "style": {
+                      "background": "transparent"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#666699"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": []
+}
