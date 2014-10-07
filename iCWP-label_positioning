@@ -5,7 +5,120 @@
   "ideas": {
     "21": {
       "title": "compute",
-      "id": 4
+      "id": 4,
+      "ideas": {
+        "1": {
+          "title": "iFastTrack.isManual",
+          "id": 44,
+          "ideas": {
+            "1": {
+              "title": "true",
+              "id": 45,
+              "ideas": {
+                "1": {
+                  "title": "Master = TDB",
+                  "id": 47
+                },
+                "2": {
+                  "title": "oLabelOffset = iFastTrack.labelPlacement",
+                  "id": 54
+                }
+              }
+            },
+            "2": {
+              "title": "talse",
+              "id": 46,
+              "ideas": {
+                "1": {
+                  "title": "r_fastOptions.isOrientationModeAutomatic && r_pAlorItemMap[trackItemId].r_exists",
+                  "id": 48,
+                  "ideas": {
+                    "1": {
+                      "title": "true",
+                      "id": 49,
+                      "ideas": {
+                        "1": {
+                          "title": "Master = TDB",
+                          "id": 53,
+                          "attr": {
+                            "style": {}
+                          }
+                        },
+                        "2": {
+                          "title": "oLabelOffset =  r_pAlorItemMap[trackItemId].r_labelOffset",
+                          "id": 55
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "false",
+                      "id": 51,
+                      "ideas": {
+                        "1": {
+                          "title": "r_fastOptions.isTrackOrientationEnabled",
+                          "id": 56,
+                          "ideas": {
+                            "1": {
+                              "title": "true",
+                              "id": 57,
+                              "ideas": {
+                                "1": {
+                                  "title": "angle =  Angle(iSpeedVectorKnots)",
+                                  "id": 66,
+                                  "attr": {
+                                    "style": {}
+                                  }
+                                },
+                                "2": {
+                                  "title": "r_tdeCfg.leaderLineCfg.useAngleForTrackOriented",
+                                  "id": 62,
+                                  "ideas": {
+                                    "1": {
+                                      "title": "true",
+                                      "id": 63,
+                                      "ideas": {
+                                        "1": {
+                                          "title": "angle -=  r_tdeCfg.leaderLineCfg.trackOrientedAngle",
+                                          "id": 67
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "3": {
+                                  "title": "oLeaderOffset =  vectorFromPolar( r_fastOptions.leaderLineLength, angle )",
+                                  "id": 68
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "false",
+                              "id": 58,
+                              "ideas": {
+                                "1": {
+                                  "title": "oLeaderOffset =  r_fastOptions.defaultLabelOffset",
+                                  "id": 69
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "0.5": {
+                          "title": "Master = Leader",
+                          "attr": {
+                            "style": {}
+                          },
+                          "id": 60
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
     "-10": {
       "title": "inputs",
@@ -194,5 +307,6 @@
         }
       }
     }
-  }
+  },
+  "links": []
 }
