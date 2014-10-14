@@ -108,19 +108,49 @@
         },
         "5": {
           "title": "r_localAswDataSlowTbl",
-          "id": 13
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": "r_selectedTrackItemId",
+              "id": 34
+            }
+          }
         },
         "6": {
           "title": "r_localAswFastTbl",
-          "id": 14
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "item",
+              "id": 35,
+              "ideas": {
+                "1": {
+                  "title": "r_isManual",
+                  "id": 36
+                }
+              }
+            }
+          }
         },
         "7": {
           "title": "r_aswFastDataAccessor",
-          "id": 15
+          "id": 15,
+          "ideas": {
+            "1": {
+              "title": "not used",
+              "id": 38
+            }
+          }
         },
         "8": {
           "title": "iFastOptions",
-          "id": 28
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "r_defaultLabelOffset",
+              "id": 37
+            }
+          }
         }
       }
     }
