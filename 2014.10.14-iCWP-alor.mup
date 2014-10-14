@@ -6,7 +6,34 @@
     "1": {
       "title": "output",
       "id": 3,
-      "ideas": {}
+      "ideas": {
+        "1": {
+          "title": "r_dbeAswAlorTrackTbl",
+          "id": 16,
+          "ideas": {
+            "3": {
+              "title": "item",
+              "id": 21,
+              "ideas": {
+                "1": {
+                  "title": "r_trackItemId",
+                  "id": 17,
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "2": {
+                  "title": "r_labelOffset",
+                  "id": 18,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
     "-1": {
       "title": "input",
@@ -23,13 +50,60 @@
         "3": {
           "title": "r_localTdeTrackTbl",
           "id": 9,
-          "ideas": {}
+          "ideas": {
+            "1": {
+              "title": "item",
+              "id": 22,
+              "ideas": {
+                "1": {
+                  "title": "r_hasSpc",
+                  "id": 23
+                },
+                "2": {
+                  "title": "r_hasStca",
+                  "id": 24
+                }
+              }
+            }
+          }
         },
         "4": {
           "title": "r_localAswSlowTbl",
           "id": 12,
           "attr": {
             "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "item",
+              "id": 25,
+              "ideas": {
+                "1": {
+                  "title": "r_labelOffset",
+                  "id": 26
+                },
+                "2": {
+                  "title": "r_labelSize",
+                  "id": 27
+                },
+                "3": {
+                  "title": "r_groundSpeed?Knots",
+                  "id": 29
+                },
+                "4": {
+                  "title": "r_isTrackVisible",
+                  "id": 31
+                },
+                "5": {
+                  "title": "r_isLabelVisible",
+                  "id": 32
+                },
+                "6": {
+                  "title": "r_trackPos",
+                  "id": 33
+                }
+              }
+            }
           }
         },
         "5": {
@@ -43,6 +117,10 @@
         "7": {
           "title": "r_aswFastDataAccessor",
           "id": 15
+        },
+        "8": {
+          "title": "iFastOptions",
+          "id": 28
         }
       }
     }
