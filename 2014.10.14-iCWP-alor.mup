@@ -1,0 +1,50 @@
+{
+  "title": "2014.10.14-iCWP-alor",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "output",
+      "id": 3,
+      "ideas": {}
+    },
+    "-1": {
+      "title": "input",
+      "id": 6,
+      "ideas": {
+        "1": {
+          "title": "r_tdeCfg",
+          "id": 7
+        },
+        "2": {
+          "title": "r_alorCfg / r_config",
+          "id": 8
+        },
+        "3": {
+          "title": "r_localTdeTrackTbl",
+          "id": 9,
+          "ideas": {}
+        },
+        "4": {
+          "title": "r_localAswSlowTbl",
+          "id": 12,
+          "attr": {
+            "style": {}
+          }
+        },
+        "5": {
+          "title": "r_localAswDataSlowTbl",
+          "id": 13
+        },
+        "6": {
+          "title": "r_localAswFastTbl",
+          "id": 14
+        },
+        "7": {
+          "title": "r_aswFastDataAccessor",
+          "id": 15
+        }
+      }
+    }
+  }
+}
