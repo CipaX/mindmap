@@ -3,56 +3,8 @@
   "id": 1,
   "formatVersion": 2,
   "ideas": {
-    "1": {
-      "title": "use case ideas",
-      "id": 2,
-      "ideas": {
-        "1": {
-          "title": "drawables",
-          "id": 4,
-          "ideas": {
-            "1": {
-              "title": "draw commands",
-              "id": 5
-            },
-            "2": {
-              "title": "advanced",
-              "id": 6,
-              "ideas": {
-                "1": {
-                  "title": "multi-slot",
-                  "id": 7
-                },
-                "2": {
-                  "title": "off-screen",
-                  "id": 8
-                },
-                "3": {
-                  "title": "use an image",
-                  "id": 9
-                }
-              }
-            }
-          }
-        },
-        "2": {
-          "title": "animation",
-          "id": 10,
-          "ideas": {
-            "1": {
-              "title": "color",
-              "id": 12
-            },
-            "2": {
-              "title": "shape",
-              "id": 13
-            }
-          }
-        }
-      }
-    },
     "0.5": {
-      "title": "use cases",
+      "title": "graphic engine",
       "id": 25,
       "ideas": {
         "2": {
@@ -60,16 +12,16 @@
           "id": 62,
           "ideas": {
             "1": {
-              "title": "initialization",
+              "title": "initialize",
               "id": 31,
               "ideas": {
                 "1": {
-                  "title": "canvas.createMonolithicBuffer()",
+                  "title": "monoBuffer = graphicEngine.createMonolithicBuffer()",
                   "id": 59,
                   "ideas": {}
                 },
                 "2": {
-                  "title": "canvas.createMultiSlotBuffer()",
+                  "title": "multiBuffer = graphicEngine.createMultiSlotBuffer()",
                   "id": 61
                 }
               }
@@ -78,16 +30,6 @@
               "title": "draw scene",
               "id": 63,
               "ideas": {
-                "1": {
-                  "title": "canvas.begin( canvasGuard )",
-                  "id": 64,
-                  "ideas": {
-                    "1": {
-                      "title": "r_defaultBuffer.clear()",
-                      "id": 72
-                    }
-                  }
-                },
                 "2": {
                   "title": "~canvasGuard()",
                   "id": 69,
@@ -97,8 +39,137 @@
                       "id": 71
                     }
                   }
+                },
+                "1.71875": {
+                  "title": "CPU draw monoBuffer and upload to GPU",
+                  "id": 86,
+                  "ideas": {
+                    "3": {
+                      "title": "monoPainter.drawXXX()",
+                      "id": 81,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "4": {
+                      "title": "monoPainter.upload()",
+                      "id": 82,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2.5": {
+                      "title": "monoPainter = monoBuffer.getPainter()",
+                      "id": 74,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2.75": {
+                      "title": "monoPainter.clear()",
+                      "id": 80,
+                      "attr": {
+                        "style": {}
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "1.84375": {
+                  "title": "CPU draw multiBuffer and upload to GPU",
+                  "id": 89,
+                  "ideas": {
+                    "1": {
+                      "title": "multiPainterN = multiBuffer.getPainter(N)",
+                      "id": 83,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "idem monoPainter",
+                      "id": 90
+                    }
+                  }
+                },
+                "1.921875": {
+                  "title": "canvas.gpuDraw(multiBuffer)",
+                  "id": 92,
+                  "ideas": {
+                    "1": {
+                      "title": "[loop]",
+                      "id": 102,
+                      "ideas": {
+                        "1": {
+                          "title": "[bind]",
+                          "id": 103
+                        },
+                        "2": {
+                          "title": "drawArrays",
+                          "id": 104
+                        }
+                      }
+                    }
+                  }
+                },
+                "1.9609375": {
+                  "title": "canvas.gpuDraw(monoBuffer)",
+                  "id": 94
+                },
+                "1.8828125": {
+                  "title": "canvas.begin( canvasGuard )",
+                  "id": 64,
+                  "ideas": {
+                    "1": {
+                      "title": "r_defaultBuffer.clear()",
+                      "id": 72
+                    }
+                  },
+                  "attr": {
+                    "style": {}
+                  }
                 }
               }
+            }
+          }
+        },
+        "3": {
+          "title": "dynamic images",
+          "id": 105,
+          "ideas": {
+            "1": {
+              "title": "onScreen = graphicEngine.createCanvas(xid)",
+              "id": 106
+            },
+            "2": {
+              "title": "offScreen = graphicEngine.createCanvas()",
+              "id": 107
+            },
+            "3": {
+              "title": "cpuDrawAndUpload_1( onScreen )",
+              "id": 108
+            },
+            "4": {
+              "title": "cpuDrawAndUpload_2( offScreen )",
+              "id": 110
+            },
+            "5": {
+              "title": "onScreen.drawImage( offScreen, ... )",
+              "id": 111
+            },
+            "4.5": {
+              "title": "offScreen.begin(offGuard)",
+              "id": 112
+            },
+            "4.75": {
+              "title": "offScreen.gpuDraw(offBuffer)",
+              "id": 113
+            },
+            "4.875": {
+              "title": "~offGuard()",
+              "id": 114
             }
           }
         },
@@ -107,7 +178,7 @@
           "id": 36,
           "ideas": {
             "1": {
-              "title": "canvas(xid)",
+              "title": "graphicEngine.createCanvas(xid)",
               "id": 37
             }
           }
@@ -117,8 +188,9 @@
           "id": 50,
           "ideas": {
             "1": {
-              "title": "canvas()",
-              "id": 51
+              "title": "graphicEngine.createCanvas()",
+              "id": 51,
+              "ideas": {}
             }
           }
         },
@@ -137,11 +209,90 @@
               }
             }
           }
+        },
+        "1.4375": {
+          "title": "transformation",
+          "id": 115,
+          "ideas": {
+            "1": {
+              "title": "canvas.setTransformation",
+              "id": 116
+            }
+          }
+        },
+        "2.5": {
+          "title": "static images",
+          "id": 117,
+          "ideas": {
+            "1": {
+              "title": "option 1",
+              "id": 119,
+              "ideas": {
+                "1": {
+                  "title": "index file",
+                  "id": 120,
+                  "ideas": {
+                    "1": {
+                      "title": "key",
+                      "id": 121
+                    },
+                    "2": {
+                      "title": "image path",
+                      "id": 122
+                    }
+                  }
+                },
+                "2": {
+                  "title": "pros",
+                  "id": 123,
+                  "ideas": {
+                    "1": {
+                      "title": "process sharable ids",
+                      "id": 124
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "option 2",
+              "id": 125,
+              "ideas": {
+                "1": {
+                  "title": "key = fileName",
+                  "id": 126
+                },
+                "2": {
+                  "title": "pros",
+                  "id": 127,
+                  "ideas": {
+                    "1": {
+                      "title": "easier to use new image",
+                      "id": 128
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#c0c0c0"
+                }
+              }
+            },
+            "3": {
+              "title": "imgId = graphicEngine.loadImage( path )",
+              "id": 131
+            },
+            "4": {
+              "title": "buffer.drawImage( imgId )",
+              "id": 132
+            }
+          }
         }
       }
     },
-    "-20": {
-      "title": "engine",
+    "-50": {
+      "title": "drawable engine",
       "id": 19,
       "ideas": {
         "1": {
@@ -167,67 +318,21 @@
         "style": {}
       }
     },
-    "-30": {
-      "title": "image manager",
-      "id": 14,
+    "-51": {
+      "title": "animation",
+      "id": 10,
+      "ideas": {
+        "1": {
+          "title": "color",
+          "id": 12
+        },
+        "2": {
+          "title": "shape",
+          "id": 13
+        }
+      },
       "attr": {
         "style": {}
-      },
-      "ideas": {
-        "1": {
-          "title": "fonts",
-          "id": 16
-        },
-        "2": {
-          "title": "static images",
-          "id": 17
-        },
-        "3": {
-          "title": "dynamic images",
-          "id": 18
-        }
-      }
-    },
-    "-40": {
-      "title": "canvas",
-      "id": 38,
-      "ideas": {
-        "1": {
-          "title": "constructor",
-          "id": 40,
-          "ideas": {
-            "1": {
-              "title": "args: n/a",
-              "id": 41,
-              "ideas": {
-                "1": {
-                  "title": "off-screen",
-                  "id": 45
-                }
-              }
-            },
-            "2": {
-              "title": "args: xid",
-              "id": 43,
-              "ideas": {
-                "1": {
-                  "title": "on-screen",
-                  "id": 47
-                }
-              }
-            }
-          }
-        },
-        "2": {
-          "title": "state",
-          "id": 48,
-          "ideas": {
-            "1": {
-              "title": "transformation",
-              "id": 49
-            }
-          }
-        }
       }
     }
   },
