@@ -1,1 +1,100 @@
- 
+{
+  "title": "2015.01.28-iCWP_doc-graphic_engine ",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "use cases",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "drawables",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "draw commands",
+              "id": 5
+            },
+            "2": {
+              "title": "advanced",
+              "id": 6,
+              "ideas": {
+                "1": {
+                  "title": "multi-slot",
+                  "id": 7
+                },
+                "2": {
+                  "title": "off-screen",
+                  "id": 8
+                },
+                "3": {
+                  "title": "use an image",
+                  "id": 9
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "animation",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "color",
+              "id": 12
+            },
+            "2": {
+              "title": "shape",
+              "id": 13
+            }
+          }
+        }
+      }
+    },
+    "11": {
+      "title": "image manager",
+      "id": 14,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "fonts",
+          "id": 16
+        },
+        "2": {
+          "title": "static images",
+          "id": 17
+        },
+        "3": {
+          "title": "dynamic images",
+          "id": 18
+        }
+      }
+    },
+    "21": {
+      "title": "engine",
+      "id": 19,
+      "ideas": {
+        "1": {
+          "title": "stages",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "gather client draw commands",
+              "id": 21
+            },
+            "2": {
+              "title": "upload data",
+              "id": 22
+            },
+            "3": {
+              "title": "draw arrays",
+              "id": 23
+            }
+          }
+        }
+      }
+    }
+  }
+}
