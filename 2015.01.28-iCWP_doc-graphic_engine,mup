@@ -4,7 +4,7 @@
   "formatVersion": 2,
   "ideas": {
     "1": {
-      "title": "use cases",
+      "title": "use case ideas",
       "id": 2,
       "ideas": {
         "1": {
@@ -51,28 +51,96 @@
         }
       }
     },
-    "11": {
-      "title": "image manager",
-      "id": 14,
-      "attr": {
-        "style": {}
-      },
+    "0.5": {
+      "title": "use cases",
+      "id": 25,
       "ideas": {
-        "1": {
-          "title": "fonts",
-          "id": 16
-        },
         "2": {
-          "title": "static images",
-          "id": 17
+          "title": "multiple buffers",
+          "id": 62,
+          "ideas": {
+            "1": {
+              "title": "initialization",
+              "id": 31,
+              "ideas": {
+                "1": {
+                  "title": "canvas.createMonolithicBuffer()",
+                  "id": 59,
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "canvas.createMultiSlotBuffer()",
+                  "id": 61
+                }
+              }
+            },
+            "2": {
+              "title": "draw scene",
+              "id": 63,
+              "ideas": {
+                "1": {
+                  "title": "canvas.begin( canvasGuard )",
+                  "id": 64,
+                  "ideas": {
+                    "1": {
+                      "title": "r_defaultBuffer.clear()",
+                      "id": 72
+                    }
+                  }
+                },
+                "2": {
+                  "title": "~canvasGuard()",
+                  "id": 69,
+                  "ideas": {
+                    "1": {
+                      "title": "swapBuffers",
+                      "id": 71
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
-        "3": {
-          "title": "dynamic images",
-          "id": 18
+        "0.5": {
+          "title": "draw on widget/window",
+          "id": 36,
+          "ideas": {
+            "1": {
+              "title": "canvas(xid)",
+              "id": 37
+            }
+          }
+        },
+        "0.75": {
+          "title": "draw off-screen",
+          "id": 50,
+          "ideas": {
+            "1": {
+              "title": "canvas()",
+              "id": 51
+            }
+          }
+        },
+        "0.875": {
+          "title": "default painter",
+          "id": 52,
+          "ideas": {
+            "1": {
+              "title": "canvas.getDefaultPainter()",
+              "id": 53,
+              "ideas": {
+                "1": {
+                  "title": "return canvas.getDefaultBuffer().getPainter()",
+                  "id": 57
+                }
+              }
+            }
+          }
         }
       }
     },
-    "21": {
+    "-20": {
       "title": "engine",
       "id": 19,
       "ideas": {
@@ -94,7 +162,74 @@
             }
           }
         }
+      },
+      "attr": {
+        "style": {}
+      }
+    },
+    "-30": {
+      "title": "image manager",
+      "id": 14,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "fonts",
+          "id": 16
+        },
+        "2": {
+          "title": "static images",
+          "id": 17
+        },
+        "3": {
+          "title": "dynamic images",
+          "id": 18
+        }
+      }
+    },
+    "-40": {
+      "title": "canvas",
+      "id": 38,
+      "ideas": {
+        "1": {
+          "title": "constructor",
+          "id": 40,
+          "ideas": {
+            "1": {
+              "title": "args: n/a",
+              "id": 41,
+              "ideas": {
+                "1": {
+                  "title": "off-screen",
+                  "id": 45
+                }
+              }
+            },
+            "2": {
+              "title": "args: xid",
+              "id": 43,
+              "ideas": {
+                "1": {
+                  "title": "on-screen",
+                  "id": 47
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "state",
+          "id": 48,
+          "ideas": {
+            "1": {
+              "title": "transformation",
+              "id": 49
+            }
+          }
+        }
       }
     }
-  }
+  },
+  "links": []
 }
